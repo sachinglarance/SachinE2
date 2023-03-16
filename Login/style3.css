@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+.registration{
+    color: white;       
+    padding: 10px;
+    border-style: dotted;
+    border-color: black;
+    background-image: linear-gradient(0deg, rgb(246,156,207), rgb(62,201,254));
+    display: block;
+}
+table{
+    margin: 20px;
+}

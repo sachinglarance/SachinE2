@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            students registration form
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <h1> Students Registration Form Using Table in HTML </h1>
+        <div class="registration">
+            <table  style="width:100%">
+            <form name="myForm" action="home.html" onsubmit="return validateForm()" method="post">
+               <tr>
+                <td style="width:30%">First Name</td>
+                <td style="width: 100%;"><input type="text" id="fname" name="fname" placeholder="Ex. SachinCharles" onchange="upperCase()" >
+            ( Max 50 Characters Allowed )</td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" id="lname" name="lname" placeholder="A" >
+                ( Max 50 Characters Allowed )</td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="email" name="email" placeholder=" Ex. abc@gmail.com" ></td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Mobile Number</td>
+                    <td ><input type="tel" id="mobile" name="mobile" placeholder="Ex. 9842XXXXXX" >
+                    (10 Digits Allowed)</td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" id="gender" name="gender" value="male">Male
+                    <input type="radio" id="gender" name="gender" value="female">Female</td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Date Of Birth(DOB)</td>
+                    <td><input type="date" id="dob" name="dob" ></td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Address</td>
+                   <td><textarea id="address" name="address" rows="05" cols="25%" ></textarea></td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>City</td>
+                    <td colspan="2"><input type="text" id="City" name="City" placeholder="Ex.Bangalore" >( Max 50 Characters Allowed )
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Pincode</td>
+                    <td colspan="2"><input type="text" id="pincode" name="pincode" placeholder="Ex. 600014" >( Max 06 Characters Allowed )
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>State</td>
+                    <td colspan="2"><input type="text" id="state" name="state" placeholder="Ex. Tamilnadu" >( Max 50 Characters Allowed )
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+               <tr>
+                    <td>Country</td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Ex. India" ></td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td><input type="radio" >Drawing<input type="radio" >Singing<input type="radio" >Dancing<input type="radio" >Sketching <br> <input type="radio" >Others <input type="text" placeholder="Ex. Teaching"> ( Max 50 Characters Allowed )</td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td><input type="radio">High School (10th)<input type="radio">Higher School (12th)<input type="radio">Graduation (Bachelors)<input type="radio">Post Graduation (Masters)<input type="radio">Phd</td>
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+                <tr>
+                    <td>Courses Applied For</td>
+                    <td><input type="radio" >BCA (Bachelor of Computer Applications)<input type="radio">B.Com (Bachelor of Commerce)<input type="radio">B.Sc (Bachelor of Science)<br><input type="radio">BA (Bachelor of Arts)<input type="radio">MCA (Master of Computer Applications)<input type="radio">M.Com (Master of Commerce)<input type="radio">M.Sc (Master of Science)<br><input type="radio" >MA (Master of Arts)</td>
+                    
+                </tr>
+                <tr> <td>&nbsp;</td> </tr>
+                    <tr style="width:100%">
+                        <td  colspan="2"  align="center"><input type="submit" value="Submit" onclick="return ValidateEmail(document.myForm.email)"> 
+                        <input type="reset" id="reset" name="reset" ></td>
+                    </tr>
+            </form>   
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
